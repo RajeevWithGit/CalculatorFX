@@ -1,0 +1,39 @@
+.root {
+    -fx-background-color: #1c191c;
+    -fx-padding: 0;
+}
+
+Label {
+    -fx-alignment: center_right;
+    -fx-font-size: 40px;
+    -fx-padding: 10;
+    -fx-text-fill: #fff;
+}
+
+Button {
+    -fx-background-color: #e0e0e7;
+    -fx-background-radius: 0;
+    -fx-border-width: 1 1 0 0;
+    -fx-border-color: #777 #666;
+    -fx-font-size: 24px;
+    -fx-pref-height: 80px;
+    -fx-pref-width: 80px;
+}
+
+Button:pressed {
+    -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0.3, 1, 1);
+}
+
+.key-dot {
+    -fx-pref-width: 160px;
+}
+
+.function-keys {
+    -fx-background-color: linear-gradient(to bottom, rgba(202, 202, 204, 1) 0%, rgba(196, 194, 204, 1) 100%);
+}
+
+.operator-keys {
+    -fx-background-color: linear-gradient(to bottom, rgba(252, 156, 23, 1) 0%, rgba(247, 126, 27, 1) 100%);
+    -fx-text-fill: #fff;
+    -fx-border-width: 1 0 0 0;
+}
